@@ -5,55 +5,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> medicine login</title>
+
+    <!--CSS-->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- icon-->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body class="bg-light">
-    <div class="container">
-        <div class="row justify-content-between align-items-center">
+    <div class="container bg-light">
+        <div class="bg-light row justify-content-between align-items-center">
             <div class="col-12 col-md-7">
-                <img class="w-100" src="/img/doctour.jpeg" alt="">
+                <img style="height: 80%;width: 100%;" src="./img/doctour.png" alt="">
             </div>
-            <div class="col-12 col-md-5">
-                <div class="inputdiv">
+            <div class="col-12 col-md-5  inputdiv bg-light">
 
-                    <form action="">
-                        <h1 class="tam-med">tam-med</h1>
-                        <h3 class="text-capitalize fw-bolder">sign in</h3>
+                <form action="" style="display: block;">
+                    <h1 class="tam-med">tam-med</h1>
+                    <h3 class="text-capitalize fw-bolder " style="font-size: 40px;">sign in</h3>
 
-                        <!-- username login  -->
+                    <!-- username login  -->
 
-                        <input class="mt-3 w-100" type="text" placeholder="username">
+                    <input class="mt-3 " type="text" placeholder="username">
 
-                        <!-- password login  -->
-                        <input class="mt-3 mb-3 w-100" type="text" placeholder="password">
-
+                    <!-- password login  -->
+                    <input class="mt-3 mb-3" type="text" placeholder="password">
 
 
-                        <span  id="paragraph" class="text-decoration-underline">Don't have an account?</span>
-                    </form>
+
+                    <span id="paragraph" class="text-decoration-underline">Don't have an account?</span>
                     <button class="my-4" id="button">get start</button>
-                    <br>
-                 
 
-                    <div class="social-media">
-                        <a href="">
-                            <i class="fa-brands fa-facebook-f "></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-twitter "></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-google-plus "></i>
-                        </a>
-                    </div>
+                </form>
 
-                </div>
+
+                <ul class="social-network social-circle">
+                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a>
+                    </li>
+                </ul>
+
+                <img src="img/siarr.png" width="10%" style="position: absolute;right: 2%;" alt="">
+
 
             </div>
 

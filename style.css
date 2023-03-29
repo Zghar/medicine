@@ -1,5 +1,13 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(MuseoSansCyrl-900.ttf);
+}
+
+* {
+  font-family: myFirstFont;
+}
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: myFirstFont;
   line-height: 1.5;
   font-size: 1em;
 }
@@ -11,7 +19,8 @@ body {
   justify-content: center;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -20,10 +29,17 @@ input {
   line-height: inherit;
   color: #2e3750;
   min-width: 12em;
-  border: 2px solid #f5428a;
+  border: 2px solid #dc3545;
   border-radius: 20px;
   padding: 7px;
   text-align: center;
+  width: 60%;
+  transition: width 0.4s;
+
+}
+input:focus {
+  width: 70%;
+  transition: width 0.4s;
 }
 
 ::-moz-placeholder {
@@ -43,71 +59,139 @@ input {
   align-items: center;
 }
 .inputdiv .tam-med {
-  color: #f5428a;
+  color: #dc3545;
   font-weight: bolder;
-  font-size: 27pt;
   text-transform: uppercase;
+  font-size: 45px;
 }
 
 .inputdiv a {
   color: rgb(78, 78, 78);
-  margin: 5px !important;
+  margin: 0 5px !important;
 }
 
 #button {
   border-radius: 20px;
-  border: 2px solid #f5428a;
+  border: 2px solid #dc3545;
   background-color: white;
-  width: 120px;
+  width: 150px;
   padding: 10px;
   text-transform: capitalize;
   font-weight: 500;
   transition: ease-in-out;
   transition: ease-in-out 0.4s;
+  font-size: 20px;
 }
 
 #button:hover {
-  background-color: #f5428a;
+  background-color: #dc3545;
   color: white;
+}
+ul.social-network {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  margin: auto !important;
+  padding: 0;
+  justify-content: center;
 }
 
-.social-media {
+ul.social-network li {
+  display: inline;
+  margin: 15px 5px;
+}
+
+.social-network a.icoFacebook:hover {
+  background-color: #3b5998;
+}
+
+.social-network a.icoTwitter:hover {
+  background-color: #33ccff;
+}
+
+.social-network a.icoGoogle:hover {
+  background-color: #bd3518;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i {
+  color: #fff;
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+  color: #44bcdd;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  transform: rotate(360deg);
+  transition: all 0.5s;
+}
+
+.social-circle i {
+  color: rgb(19, 19, 19);
+  transition: all 1s;
+}
+
+a:visited {
+  color: rgb(194, 196, 197);
+}
+
+div.containerr {
+  margin: auto;
+  width: 98%;
+  margin-top: 100px;
+}
+
+div.row {
   display: flex;
   justify-content: center;
-  margin-top: 4px;
+  width: 100%;
 }
-.social-media a {
-  align-items: center;
-  text-align: center;
+
+div.imagge {
+  width: 45%;
+  height: 90%;
 }
-.social-media a :hover {
-  background-color: #f5428a;
+img.imgfluid {
+  margin: auto;
 }
-.social-media i {
-  font-size: 19pt;
-  transition: all 0.2s ease-in-out;
-  width: 50px;
-  text-align: center;
-  height: 50px;
-  align-items: center;
-}
-.social-media i .fa-facebook-f {
-  color: rgb(6, 115, 231);
-}
-.social-media i .fa-twitter {
-  color: rgb(29, 161, 242);
-}
-.social-media i .fa-google-plus {
-  color: rgb(214, 78, 66);
-}
-.social-media i:hover {
-  transform: scale(1.1);
-  color: white;
-  align-self: center;
-  align-items: center;
-  border-radius: 50%;
+span:hover {
+  cursor: pointer;
 }
 
 #paragraph {
-  margin-top: 50px;
-}/*# sourceMappingURL=style.css.map */
+  margin-top: 5px;
+  display: block;
+} /*# sourceMappingURL=style.css.map */
+
+@media screen and (min-width: 500px) {
+  h1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  h1 {
+    display: block;
+  }
+}
