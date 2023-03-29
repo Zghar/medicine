@@ -1,0 +1,113 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
+  font-size: 1em;
+}
+
+body {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html, body {
+  height: 100%;
+}
+
+input {
+  font-family: inherit;
+  line-height: inherit;
+  color: #2e3750;
+  min-width: 12em;
+  border: 2px solid #f5428a;
+  border-radius: 20px;
+  padding: 7px;
+  text-align: center;
+}
+
+::-moz-placeholder {
+  color: #48494a;
+}
+
+::placeholder {
+  color: #48494a;
+}
+
+.container {
+  background-color: rgb(247, 247, 247);
+}
+
+.inputdiv {
+  text-align: center;
+  align-items: center;
+}
+.inputdiv .tam-med {
+  color: #f5428a;
+  font-weight: bolder;
+  font-size: 27pt;
+  text-transform: uppercase;
+}
+
+.inputdiv a {
+  color: rgb(78, 78, 78);
+  margin: 5px !important;
+}
+
+#button {
+  border-radius: 20px;
+  border: 2px solid #f5428a;
+  background-color: white;
+  width: 120px;
+  padding: 10px;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: ease-in-out;
+  transition: ease-in-out 0.4s;
+}
+
+#button:hover {
+  background-color: #f5428a;
+  color: white;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+}
+.social-media a {
+  align-items: center;
+  text-align: center;
+}
+.social-media a :hover {
+  background-color: #f5428a;
+}
+.social-media i {
+  font-size: 19pt;
+  transition: all 0.2s ease-in-out;
+  width: 50px;
+  text-align: center;
+  height: 50px;
+  align-items: center;
+}
+.social-media i .fa-facebook-f {
+  color: rgb(6, 115, 231);
+}
+.social-media i .fa-twitter {
+  color: rgb(29, 161, 242);
+}
+.social-media i .fa-google-plus {
+  color: rgb(214, 78, 66);
+}
+.social-media i:hover {
+  transform: scale(1.1);
+  color: white;
+  align-self: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#paragraph {
+  margin-top: 50px;
+}/*# sourceMappingURL=style.css.map */
